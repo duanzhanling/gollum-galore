@@ -48,7 +48,7 @@ RUN \
   # Useful for backup
   rsync openssh \
   # Install gollum
-  && gem install gollum  \
+  && gem install gollum  && gem install github-markdown \
   # cleanup apk cache
   && rm -rf /var/cache/apk/* \
   # Initialize wiki data.
